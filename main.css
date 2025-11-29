@@ -18,6 +18,12 @@ body {
     color: #fff;
 }
 
+button,
+.player-option,
+details {
+    cursor: pointer;
+}
+
 .container {
     width: 85%;
 }
@@ -30,7 +36,7 @@ details {
 }
 
 li {
-    list-style:disc;
+    list-style: disc;
     position: relative;
     margin-left: 2rem;
 }
@@ -71,11 +77,6 @@ h2 {
     border: none;
     margin-top: 5px;
     padding: 5px;
-}
-
-button,
-.player-option {
-    cursor: pointer;
 }
 
 .reset-game {
