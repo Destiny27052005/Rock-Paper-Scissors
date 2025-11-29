@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    background-color: #262c4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    width: 85%;
+}
+
+details {
+    background-color: rgb(130, 111, 6);
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 0.4rem;
+}
+
+li {
+    list-style:disc;
+    position: relative;
+    margin-left: 2rem;
+}
+
+.score,
+.option {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+h1,
+h2 {
+    font-size: 20px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.player-option {
+    width: 80px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 1rem;
+    padding: 5px;
+}
+
+.player-option img {
+    width: 90%;
+}
+
+.rock,
+.paper,
+.scissors {
+    color: #000;
+    background: none;
+    border: none;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+button,
+.player-option {
+    cursor: pointer;
+}
+
+.reset-game {
+    font-size: 16px;
+    font-weight: 600;
+    display: none;
+    justify-self: center;
+    margin-top: 1.5rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #262c4e;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 400px;
+    }
+}
